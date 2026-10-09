@@ -1,0 +1,11 @@
+TEKEA V3.24 — GITHUB / CLOUDFLARE PREP
+
+STATUS:
+- Visual design: frozen / approved
+- Responsive: approved checkpoint
+- Performance assets: optimized
+- GitHub-ready: yes
+- Cloudflare Pages-ready: yes
+- Search indexing: intentionally disabled until final domain is connected
+- Canonical URLs: pending final domain
+- Sitemap: pending final domain

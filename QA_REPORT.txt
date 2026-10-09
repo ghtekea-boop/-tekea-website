@@ -1,0 +1,18 @@
+ TEKEA V3.23 — FINAL UX / COMMERCIAL QA
+========================================
+HTML pages checked: 12
+Internal links/anchors checked: 126
+External links checked: 48
+Asset references checked: 265
+IDs inspected: 14
+Issues found: 0
+
+Preview indexing: BLOCKED intentionally until final domain publication.
+Prices: preserved from V3.22.1 (starting prices / “from”).
+Primary external contacts: Telegram, Behance, Dprofile.
+Case previous/next loop: checked.
+RU/EN persistence: preserved via localStorage.
+Keyboard/focus accessibility: improved in V3.23.
+404 page: added.
+
+RESULT: static QA passed with no broken local references or navigation-cycle errors.

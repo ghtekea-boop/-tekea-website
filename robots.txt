@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# Preview/staging only. Replace at production SEO activation after the final domain is connected.
