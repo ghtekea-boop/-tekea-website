@@ -1,18 +1,25 @@
- TEKEA V3.23 — FINAL UX / COMMERCIAL QA
-========================================
+TEKEA V3.25 — FINAL DOMAIN / SEO QA
+===================================
 HTML pages checked: 12
-Internal links/anchors checked: 126
-External links checked: 48
-Asset references checked: 265
-IDs inspected: 14
-Issues found: 0
+Indexable production pages: 11
+Intentional noindex pages: 1 (404)
+Canonical URLs checked: 11
+Open Graph production URLs checked: 11
+Sitemap URLs: 11
+Broken local references found: 0
+JavaScript syntax errors: 0
 
-Preview indexing: BLOCKED intentionally until final domain publication.
-Prices: preserved from V3.22.1 (starting prices / “from”).
-Primary external contacts: Telegram, Behance, Dprofile.
-Case previous/next loop: checked.
-RU/EN persistence: preserved via localStorage.
-Keyboard/focus accessibility: improved in V3.23.
-404 page: added.
+PRODUCTION SEO STATUS
+- Primary domain: https://tekeadesign.ru
+- www host: 301 redirect to apex configured in Cloudflare
+- HTTPS / SSL: active in Cloudflare
+- robots.txt: indexing allowed
+- sitemap.xml: generated
+- Canonical: absolute HTTPS production URLs
+- og:url: absolute HTTPS production URLs
+- og:image / twitter:image: absolute HTTPS production URLs
+- Homepage structured data: Organization + WebSite
+- RU/EN runtime SEO title/description behavior: preserved
+- 404: noindex, follow
 
-RESULT: static QA passed with no broken local references or navigation-cycle errors.
+RESULT: V3.25 static SEO QA passed. Deploy to main, then verify production robots.txt and sitemap.xml on the live domain.

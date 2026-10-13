@@ -1,11 +1,16 @@
-TEKEA V3.24 — GITHUB / CLOUDFLARE PREP
+TEKEA V3.25 — FINAL DOMAIN / SEO
 
 STATUS:
 - Visual design: frozen / approved
 - Responsive: approved checkpoint
 - Performance assets: optimized
-- GitHub-ready: yes
-- Cloudflare Pages-ready: yes
-- Search indexing: intentionally disabled until final domain is connected
-- Canonical URLs: pending final domain
-- Sitemap: pending final domain
+- GitHub + Cloudflare Pages: active
+- Production domain: https://tekeadesign.ru
+- HTTPS / SSL: active
+- www redirect: configured in Cloudflare (301 → apex)
+- Search indexing: ENABLED in V3.25
+- Canonical URLs: active on all indexable pages
+- Sitemap: https://tekeadesign.ru/sitemap.xml
+- robots.txt: production / indexable
+- Open Graph URLs/images: absolute production URLs
+- 404: remains noindex

@@ -404,8 +404,14 @@
       if (desc) desc.content = seo[1];
       const ogTitle = document.querySelector('meta[property="og:title"]');
       const ogDesc = document.querySelector('meta[property="og:description"]');
+      const ogLocale = document.querySelector('meta[property="og:locale"]');
+      const twitterTitle = document.querySelector('meta[name="twitter:title"]');
+      const twitterDesc = document.querySelector('meta[name="twitter:description"]');
       if (ogTitle) ogTitle.content = seo[0];
       if (ogDesc) ogDesc.content = seo[1];
+      if (ogLocale) ogLocale.content = safe === 'ru' ? 'ru_RU' : 'en_US';
+      if (twitterTitle) twitterTitle.content = seo[0];
+      if (twitterDesc) twitterDesc.content = seo[1];
     }
 
     localStorage.setItem('tekea-language', safe);

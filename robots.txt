@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Preview/staging only. Replace at production SEO activation after the final domain is connected.
+Sitemap: https://tekeadesign.ru/sitemap.xml

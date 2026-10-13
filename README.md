@@ -1,6 +1,13 @@
 # TEKEA Design Studio — Website
 
-Production-ready static website for TEKEA Design Studio.
+Production static website for TEKEA Design Studio.
+
+## Production
+- Primary domain: `https://tekeadesign.ru`
+- `www.tekeadesign.ru` → 301 redirect to the primary domain
+- Hosting/CDN: Cloudflare Pages
+- Source/deploy: GitHub `main` branch
+- HTTPS: Cloudflare SSL
 
 ## Stack
 - HTML
@@ -9,41 +16,25 @@ Production-ready static website for TEKEA Design Studio.
 - Responsive RU / EN interface
 - WebP-optimized media
 
-## Recommended production architecture
+## Deployment workflow
+TEKEA CODE → GitHub → Cloudflare Pages → `tekeadesign.ru`
 
-TEKEA CODE → GitHub → Cloudflare Pages → custom domain → HTTPS → Cloudflare CDN
+For normal site edits there is no need to reconfigure DNS, nameservers, SSL or the domain. Replace/update the required files in the local repository, commit and push to `main`; Cloudflare Pages deploys automatically.
 
-## Cloudflare Pages settings
-
-This is a static site and does not require a build step.
-
-Recommended settings when connecting the GitHub repository:
+## Cloudflare Pages build settings
 - Production branch: `main`
 - Framework preset: None
-- Build command: leave empty
-- Root directory: repository root
-- Output: repository root / static files
+- Build command: `exit 0` (or no build command)
+- Static files live in repository root
 
-## Before production indexing
-
-Search indexing is intentionally disabled during preview/testing. Before the final domain goes live we will:
-1. add the real canonical URL to every page;
-2. add `og:url` values;
-3. create `sitemap.xml` using the final domain;
-4. switch robots/meta from `noindex` to indexable production values;
-5. update `robots.txt` with the sitemap URL;
-6. verify all pages on the final HTTPS domain.
-
-Do not enable indexing on a temporary `*.pages.dev` or Netlify preview URL.
-
-## Deployment workflow
-
-After GitHub + Cloudflare Pages are connected:
-1. update the site in the repository;
-2. commit to `main`;
-3. Cloudflare Pages deploys automatically;
-4. production domain updates without rebuilding the site manually in a visual constructor.
+## SEO — V3.25
+- Production indexing enabled on public pages
+- Canonical URLs use `https://tekeadesign.ru`
+- Absolute Open Graph/Twitter image URL
+- `sitemap.xml` published at `/sitemap.xml`
+- `robots.txt` allows crawling and points to the sitemap
+- Homepage includes Organization + WebSite structured data
+- 404 remains non-indexable
 
 ## Important
-
-Keep the repository private unless TEKEA intentionally chooses to publish the source code.
+The site is bilingual on the same URLs via the RU/EN client-side switch. If TEKEA later targets organic search aggressively in both Russian and English, the next SEO architecture step should be separate language URLs (for example `/ru/` and `/en/`) with `hreflang`. This is not required for the current launch.

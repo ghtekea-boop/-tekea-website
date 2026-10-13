@@ -124,3 +124,13 @@ Portrait phones: 320, 360, 375, 390/393, 412, 430, 480 px.
 Tablets: 768, 834, 1024 px.
 Phone landscape: up to 932 px wide with viewport height <= 500 px.
 The approved 393 px iPhone composition from V3.20 is preserved as the reference state.
+
+
+V3.25 — FINAL DOMAIN / SEO
+- Production domain fixed to https://tekeadesign.ru.
+- Search indexing enabled on production pages; 404 remains noindex.
+- Canonical and og:url added to all indexable pages.
+- Open Graph/Twitter images now use absolute HTTPS URLs.
+- sitemap.xml added and robots.txt switched to production mode.
+- Homepage Organization/WebSite structured data added.
+- Runtime language switch also updates Twitter title/description and Open Graph locale.
